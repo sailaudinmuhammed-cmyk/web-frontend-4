@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Assignment 4: Bootstrap validation.">
+<title>Task 3 — Bootstrap validation</title>
+<link rel="stylesheet" href="assets/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+<script src="forms.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to form</a>
+<nav class="navbar border-bottom" aria-label="Assignment tasks"><div class="container nav-content"><span class="navbar-brand">Assignment 4</span><div class="nav"><a class="nav-link" href="index.html">Task 0</a>
+<a class="nav-link" href="task1.html">Task 1</a>
+<a class="nav-link" href="task2.html">Task 2</a>
+<a class="nav-link" href="task3.html" aria-current="page">Task 3</a>
+<a class="nav-link" href="task4.html">Task 4</a></div></div></nav>
+<main class="container page" id="main">
+<p class="text-secondary mb-2">Task 3 · Forms and validation</p>
+<h1>Bootstrap validation</h1>
+<p>Submit to see feedback, then edit the fields to correct errors.</p>
+<p class="small text-secondary">Practice form: submissions are checked locally. No data is sent or saved.</p>
+<form class="row g-3" data-validation="bootstrap">
+<div class="col-md-6"><label class="form-label" for="name">Name</label><input id="name" name="name" type="text" class="form-control" aria-describedby="name-help name-error" required maxlength="80" autocomplete="name"><div class="valid-feedback">Looks good!</div><div class="invalid-feedback" id="name-error">Please enter a valid name.</div><div class="form-text" id="name-help">Up to 80 characters.</div></div><div class="col-md-6"><label class="form-label" for="email">Email</label><input id="email" name="email" type="email" class="form-control" aria-describedby="email-help email-error" required maxlength="254" autocomplete="email" placeholder="you@example.com"><div class="valid-feedback">Looks good!</div><div class="invalid-feedback" id="email-error">Please enter a valid email.</div><div class="form-text" id="email-help">Use an address such as you@example.com.</div></div><div class="col-12 basic-field"><label class="form-label" for="message">Message</label><textarea id="message" name="message" rows="5" class="form-control" aria-describedby="message-help message-error" placeholder="Your message" required maxlength="1000"></textarea><div class="valid-feedback">Looks good!</div><div class="invalid-feedback" id="message-error">Please enter a message.</div><div class="form-text" id="message-help">Up to 1,000 characters.</div></div>
+<div class="col-12 actions"><button type="submit" class="btn btn-primary">Submit</button> </div>
+</form>
+<p id="form-status" class="mt-3" role="status" aria-live="polite"></p>
+</main>
+<footer class="container border-top py-3 small text-secondary">Web Technologies · Assignment 4</footer>
+</body>
+</html>
