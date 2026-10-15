@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Assignment 4: Registration form.">
+<title>Task 4 — Registration form</title>
+<link rel="stylesheet" href="assets/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+<script src="forms.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to form</a>
+<nav class="navbar border-bottom" aria-label="Assignment tasks"><div class="container nav-content"><span class="navbar-brand">Assignment 4</span><div class="nav"><a class="nav-link" href="index.html">Task 0</a>
+<a class="nav-link" href="task1.html">Task 1</a>
+<a class="nav-link" href="task2.html">Task 2</a>
+<a class="nav-link" href="task3.html">Task 3</a>
+<a class="nav-link" href="task4.html" aria-current="page">Task 4</a></div></div></nav>
+<main class="container page" id="main">
+<p class="text-secondary mb-2">Task 4 · Forms and validation</p>
+<h1>Registration form</h1>
+<p>Complete the required fields. Hobbies are optional.</p>
+<p class="small text-secondary">Practice form: submissions are checked locally. No data is sent or saved.</p>
+<form class="row g-3" data-validation="bootstrap">
+<div class="col-md-6"><label class="form-label" for="first-name">First name</label><input id="first-name" name="first-name" type="text" class="form-control" aria-describedby="first-name-help first-name-error" required maxlength="80" autocomplete="given-name"><div class="valid-feedback">Looks good!</div><div class="invalid-feedback" id="first-name-error">Please enter a valid first name.</div><div class="form-text" id="first-name-help"></div></div><div class="col-md-6"><label class="form-label" for="last-name">Last name</label><input id="last-name" name="last-name" type="text" class="form-control" aria-describedby="last-name-help last-name-error" required maxlength="80" autocomplete="family-name"><div class="valid-feedback">Looks good!</div><div class="invalid-feedback" id="last-name-error">Please enter a valid last name.</div><div class="form-text" id="last-name-help"></div></div><div class="col-md-6"><label class="form-label" for="email">Email</label><input id="email" name="email" type="email" class="form-control" aria-describedby="email-help email-error" required maxlength="254" autocomplete="email" placeholder="you@example.com"><div class="valid-feedback">Looks good!</div><div class="invalid-feedback" id="email-error">Please enter a valid email.</div><div class="form-text" id="email-help"></div></div><div class="col-md-6"><label class="form-label" for="country">Country</label><select class="form-select" id="country" name="country" required aria-describedby="country-error"><option value="">Choose a country</option><option value="KZ">Kazakhstan</option><option value="UZ">Uzbekistan</option><option value="KG">Kyrgyzstan</option><option value="US">United States</option><option value="GB">United Kingdom</option><option value="other">Other</option></select><div class="valid-feedback">Looks good!</div><div class="invalid-feedback" id="country-error">Please select a country.</div></div><div class="col-md-6"><label class="form-label" for="password">Password</label><input id="password" name="password" type="password" class="form-control" aria-describedby="password-help password-error" required minlength="8" maxlength="128" autocomplete="new-password"><div class="valid-feedback">Looks good!</div><div class="invalid-feedback" id="password-error">Please enter a valid password.</div><div class="form-text" id="password-help">Use 8 to 128 characters. Use a sample password for this demo.</div></div><div class="col-md-6"><label class="form-label" for="confirm-password">Confirm password</label><input id="confirm-password" name="confirm-password" type="password" class="form-control" aria-describedby="confirm-password-help confirm-password-error" required minlength="8" maxlength="128" autocomplete="new-password"><div class="valid-feedback">Looks good!</div><div class="invalid-feedback" id="confirm-password-error">Please enter a valid confirm password.</div><div class="form-text" id="confirm-password-help">Enter the same password again.</div></div><fieldset class="col-12"><legend class="fs-6">Gender (required)</legend><div class="form-check form-check-inline"><input class="form-check-input" id="gender-female" type="radio" name="gender" value="Female" required aria-describedby="gender-error"><label class="form-check-label" for="gender-female">Female</label></div><div class="form-check form-check-inline"><input class="form-check-input" id="gender-male" type="radio" name="gender" value="Male" required aria-describedby="gender-error"><label class="form-check-label" for="gender-male">Male</label></div><div class="form-check form-check-inline"><input class="form-check-input" id="gender-prefer-not-to-say" type="radio" name="gender" value="Prefer not to say" required aria-describedby="gender-error"><label class="form-check-label" for="gender-prefer-not-to-say">Prefer not to say</label></div><div id="gender-error" class="group-feedback" hidden>Please select a gender option.</div><div id="gender-valid" class="group-success" hidden>Looks good!</div></fieldset><fieldset class="col-12"><legend class="fs-6">Hobbies (optional)</legend><div class="form-check form-check-inline"><input class="form-check-input" id="hobby-reading" type="checkbox" name="hobbies" value="Reading"><label class="form-check-label" for="hobby-reading">Reading</label></div><div class="form-check form-check-inline"><input class="form-check-input" id="hobby-sports" type="checkbox" name="hobbies" value="Sports"><label class="form-check-label" for="hobby-sports">Sports</label></div><div class="form-check form-check-inline"><input class="form-check-input" id="hobby-music" type="checkbox" name="hobbies" value="Music"><label class="form-check-label" for="hobby-music">Music</label></div></fieldset>
+<div class="col-12 actions"><button type="submit" class="btn btn-primary">Submit</button> <button type="reset" class="btn btn-outline-secondary">Reset</button></div>
+</form>
+<p id="form-status" class="mt-3" role="status" aria-live="polite"></p>
+</main>
+<footer class="container border-top py-3 small text-secondary">Web Technologies · Assignment 4</footer>
+</body>
+</html>
