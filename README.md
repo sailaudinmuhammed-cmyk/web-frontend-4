@@ -4,6 +4,7 @@ HTML, CSS and JavaScript project. Bootstrap 5.3.3 is included locally in `assets
 Student: DINMUKHAMMED SAILAU
 Group: SE-2530
 
+https://sailaudinmuhammed-cmyk.github.io/web-frontend-4/ Last deployed by @sailaudinmuhammed-cmyk sailaudinmuham
 
 | Task | File | Requirements covered |
 | --- | --- | --- |
